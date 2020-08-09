@@ -1,0 +1,329 @@
+/* fuentes */
+@font-face {
+  font-family: "carose";
+  src: url(./fonts/CAROSEThin.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "dancing";
+  src: url(./fonts/DancingScript-VariableFont_wght.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+/* ESTILOS GENERALES */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.clearfix {
+  float: none;
+  clear: both;
+}
+
+.layout {
+  width: 100%;
+  height: 618px;
+}
+
+#header {
+  width: 22%;
+  height: 218px;
+}
+#header h1 {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 5px;
+  padding-top: 20px;
+  transition: all 300ms;
+}
+#header h1:hover {
+  transform: scale(1.1, 1.1);
+}
+#header a {
+  font-family: "dancing";
+  text-decoration: none;
+  color: #5e5847;
+}
+#header p {
+  font-family: "carose";
+  font-weight: bold;
+  font-style: normal;
+  font-size: 10px;
+  text-align: center;
+  color: #5e5847;
+}
+
+#menu {
+  width: 22%;
+  height: 415px;
+}
+#menu ul {
+  width: 100%;
+  height: 30px;
+}
+#menu li {
+  width: 100%;
+  height: 80px;
+  text-align: center;
+  list-style: none;
+  transition: all 300ms;
+}
+#menu li:hover {
+  transform: scale(1.1, 1.1);
+}
+#menu a {
+  width: 100%;
+  height: 40px;
+  text-decoration: none;
+  font-family: "carose";
+  font-style: normal;
+  font-weight: bolder;
+  font-size: 18px;
+  color: #5e5847;
+}
+#menu a:hover {
+  color: black;
+}
+#menu a:active::selection {
+  color: black;
+}
+
+#sociales {
+  display: block;
+  width: 22%;
+  height: 40px;
+}
+#sociales .redes {
+  display: block;
+  float: left;
+  width: 11%;
+  height: 31px;
+  margin-left: 25px;
+}
+#sociales img {
+  width: 30px;
+  height: 30px;
+  transition: all 300ms;
+}
+#sociales img:hover {
+  transform: scale(1.2, 1.2);
+}
+
+/* SLIDER O CAROUSEL DE IMAGENES */
+.slide-contenedor {
+  display: block;
+  float: right;
+  width: 78%;
+  height: 673px;
+  position: relative;
+  overflow: hidden;
+  /* margin: auto; */
+}
+
+/* .miSlider{
+    display: none;
+    transition: 2s;
+    max-height: 100vh;
+} */
+.miSlider img {
+  width: 100%;
+  max-height: 678px;
+  height: inherit;
+  object-fit: cover;
+  vertical-align: top;
+  transition: 2s;
+}
+
+.direcciones {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+}
+
+.direcciones a {
+  color: #fff;
+  display: inline-block;
+  padding: 20px;
+  text-decoration: none;
+}
+
+.direcciones a:hover {
+  background: rgba(0, 0, 0, 0.5);
+  transition: 0.5s;
+}
+
+.barras {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.barra {
+  cursor: pointer;
+  height: 2px;
+  width: 25px;
+  margin: 0 2px;
+  background: #dcdde1;
+  display: inline-block;
+  margin-left: 3px;
+}
+
+.active {
+  background-color: #e74c3c;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* PIE DE PAGINA */
+.footer {
+  display: block;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-size: 10px;
+  color: #5e5847;
+}
+
+/* GALERIA DE IMAGENES EN LA PAGINA ILUSTRIACIONES */
+.galeria {
+  display: block;
+  float: right;
+  width: 78%;
+  height: 673px;
+  position: relative;
+  overflow: hidden;
+  color: white;
+}
+.galeria img {
+  width: 304px;
+  height: 200px;
+  margin: 10px;
+  transition: all 300ms;
+}
+.galeria img:hover {
+  transform: scale(1.1, 1.1);
+}
+
+#formulario {
+  display: block;
+  float: right;
+  width: 50%;
+  height: 460px;
+  margin-right: 201px;
+  margin-top: 100px;
+  padding: 10px;
+  border-radius: 15px 15px 15px 15px;
+  background-color: #f1e3d9;
+  box-shadow: 0px 0px 0px 0px grey, 0px 1px 1px 0px #ccc;
+}
+#formulario h3 {
+  height: 30px;
+  font-family: "carose";
+  font-size: 24px;
+  font-weight: bolder;
+  font-style: normal;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #5e5847;
+}
+#formulario .label {
+  width: 10%;
+  display: block;
+  float: left;
+  font-family: "carose";
+  font-size: 17px;
+  font-weight: bold;
+  font-style: normal;
+  line-height: 20px;
+  color: #756e6e;
+}
+#formulario .input-text {
+  display: block;
+  float: left;
+  width: 60%;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  font-family: "carose";
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  color: black;
+  border: none;
+  outline: none;
+  box-shadow: 0px 0px 1px 0px grey inset, 0px 0px 2px 0px #ccc inset;
+}
+#formulario #text-area-titulo {
+  width: 100%;
+  display: block;
+  float: left;
+  font-family: "carose";
+  font-size: 17px;
+  font-weight: bold;
+  font-style: normal;
+  color: #5e5847;
+}
+#formulario #text-area {
+  display: block;
+  float: left;
+  margin-top: 7px;
+  resize: none;
+  width: 100%;
+  height: 200px;
+  font-family: "carose";
+  font-weight: bold;
+  font-style: normal;
+  border: none;
+  border-color: white;
+  border-radius: 5px 5px 5px 5px;
+  box-shadow: 0px 0px 0px 0px grey inset, 0px 0px 0px 0px #ccc inset;
+  outline: none;
+}
+#formulario .boton {
+  float: right;
+  text-align: center;
+  width: 100px;
+  height: 35px;
+  margin-top: 20px;
+  color: white;
+  background: linear-gradient(to bottom, #d1a98b 0%, #c9b09e 100%);
+  border: 1px solid #f1e3d9;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 15px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-weight: lighter;
+  margin-left: 17px;
+  margin-bottom: 20px;
+  outline: none;
+}
+#formulario .boton:hover {
+  background: lightskyblue;
+  transition: all 1s ease;
+}
+#formulario .boton:focus {
+  background-color: lightgreen;
+}
+
+/*# sourceMappingURL=styles.css.map */
